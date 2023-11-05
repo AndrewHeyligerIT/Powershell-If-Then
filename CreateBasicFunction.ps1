@@ -35,11 +35,11 @@ Test-Function # This calls the function. Without it will not run from this scrip
 
 #------------------  Make parameters mandatory ---------------
 function Test-Function{
-  [CmdletBinding()] #This standard pamamters to your your script automatically
+  [CmdletBinding()] 
   param( 
-    [Parameter(Mandatory=$true)]
-    [string]$ComputerName = 'localhost', # These are default values for parameters 
-    [string]$Drive = 'c:' # These are default values for parameters 
+    [Parameter(Mandatory=$true)] # This makes the following parameter mandatory. Make sure it doesn't have default value. Think of this on the same line as the parameter 
+    [string]$ComputerName, 
+    [string]$Drive = 'c:' 
   )
   
   Get-CimInstance -Class Win32_LogicalDisk -Filter "DeviceID='$Drive'" -ComputerName $ComputerName
@@ -47,6 +47,28 @@ function Test-Function{
   }
 
   Test-Function  
+
+
+#Left off at 2.11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <#
 

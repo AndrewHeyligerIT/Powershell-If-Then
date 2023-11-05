@@ -3,7 +3,8 @@
 function Test-Function{
   [CmdletBinding()] #This standard pamamters to your your script automatically
   param(
-    [string]$ComputerName = 'localhost', # These are default values for parameters 
+    [Parameter(Mandatory=$true)]
+    [string]$ComputerName, # These are default values for parameters 
     [string]$Drive = 'c:' # These are default values for parameters 
   )
   

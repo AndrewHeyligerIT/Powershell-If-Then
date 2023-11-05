@@ -1,3 +1,9 @@
+A positional parameter cannot be found that accepts argument
+  - Check spaces in syntax
+  - Check spelling
+Mandatory Parameter 'ComputerName' is initialized in the Param block. To fix a violation of this rule, please leave it 
+  - Make sure you don't have a default value for your mandatory parameter
+  
 The assignment expression is not valid. The input to an assignment operator must be an object that is able to accept assignments, such as a variable or a property.PowerShell
   - Try moving scripts or commdands in its own sheet
     - This how it was fixed before it has something to do with stuff above paramater that is not in function
@@ -9,6 +15,23 @@ The term 'Services..]' is not recognized as a name of a cmdlet, function, script
 The WinRM client cannot process the request because the server name cannot be resolved.
   - Check and make sure the computer names are correct.
 
+Unable to find type ... 
+  - Check spelling
+
+Unexpected token ..
+  - Check syntax 
+  - make sure you have all brackets in correct place
+
+
+## 
+Curser stuck when remoting
+- Ctrl V
 Red bars
   - Check the spelling and syntax 
   - Make sure you haven't used the wrong cmdlet
+
+Not updating code
+  - make sure you  don't have dot source it
+
+
+
